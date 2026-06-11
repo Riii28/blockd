@@ -1,0 +1,35 @@
+{
+   "name": "blockd",
+   "version": "1.0.0",
+   "description": "DNS-level domain blocker powered by dnsmasq",
+   "type": "module",
+   "main": "dist/index.js",
+   "bin": {
+      "blockd": "dist/index.js"
+   },
+   "files": [
+      "dist"
+   ],
+   "scripts": {
+      "dev": "sudo tsx src/index.ts",
+      "build": "tsc",
+      "start": "sudo env PATH=$PATH node dist/index.js"
+   },
+   "author": {
+      "name": "Irvan",
+      "url": "https://github.com/Riii28"
+   },
+   "license": "Apache-2.0",
+   "packageManager": "pnpm@10.33.0",
+   "engines": {
+      "node": ">=18"
+   },
+   "devDependencies": {
+      "@types/node": "^25.9.3",
+      "tsx": "^4.22.4",
+      "typescript": "^6.0.3"
+   },
+   "dependencies": {
+      "chalk": "^5.6.2"
+   }
+}
