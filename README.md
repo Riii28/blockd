@@ -13,9 +13,9 @@ DNS-level domain blocker powered by dnsmasq. Runs as an interactive CLI, blocks 
 ## Installation
 
 ```bash
-npm install
-npm run build
-sudo node dist/cli.js
+pnpm install
+pnpm run build
+sudo node dist/index.js
 ```
 
 > Must be run as root — dnsmasq binds to port 53 and iptables requires elevated permissions.
@@ -52,5 +52,5 @@ State is persisted to disk and loaded on next start. Default values:
 ## Development
 
 ```bash
-npm run dev
+pnpm dev
 ```
