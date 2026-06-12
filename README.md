@@ -18,7 +18,7 @@ pnpm run build
 sudo node dist/index.js
 ```
 
-> Must be run as root — dnsmasq binds to port 53 and iptables requires elevated permissions.
+> This application uses dnsmasq to provide DNS filtering on port 53 and configures firewall rules using iptables. Both operations require elevated system privileges, so the daemon must be run as root.
 
 ## Commands
 
